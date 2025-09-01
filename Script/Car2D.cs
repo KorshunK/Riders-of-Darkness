@@ -1,4 +1,4 @@
-using UnityEngine;
+using UnityEngine
 using static UnityEngine.GraphicsBuffer;
 using static UnityEngine.RuleTile.TilingRuleOutput;
 
@@ -6,21 +6,21 @@ public class Car : MonoBehaviour
 {
     [SerializeField]
     Rigidbody2D rb;
-    // газ
+    // пїЅпїЅпїЅ
     [HideInInspector]
     public float trottleInput = 0f;
-    // тормоз
+    // пїЅпїЅпїЅпїЅпїЅпїЅ
     [HideInInspector]
     public float breakInput = 0f;
-    //// руль
+    //// пїЅпїЅпїЅпїЅ
     //[HideInInspector]
     //public float steerInput = 0f;
 
-    // скорость в кмч
+    // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅ
     [HideInInspector]
     public float kmh = 0f;
 
-    // скорость в мс
+    // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅ
     float ms = 0f;
 
     float max_Vel_ms = 180f / 3.6f;
@@ -28,16 +28,16 @@ public class Car : MonoBehaviour
     [SerializeField]
     AnimationCurve accel;
 
-    //// макс угол пооворта
+    //// пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
     //float max_rot_angle = 120f;
-    //// падение угла поворота после опред-й скорости
+    //// пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ-пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
     //float good_speed = 60f/3.6f;
     //float delta_rot = 60f;
-    //// угол поворота
+    //// пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
     //float rot_angle = 0f;
-    // Мощность (Вт)
+    // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ (пїЅпїЅ)
     float power_wt = 111900f;
-    // Крутящий моментВ
+    // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
     float hm = 250f;
     float mass = 1500f;
     float pered_num = 3.5f;
